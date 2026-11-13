@@ -1,0 +1,63 @@
+{
+  "corpus_id": "nha-dau-tu-thong-minh-excerpt",
+  "title": "Nhà đầu tư thông minh (The Intelligent Investor) - Phần mở đầu & Chương 1",
+  "source_path": "starter/data/sách.pdf",
+  "source_url": "Sách xuất bản tiếng Việt (bản dịch từ The Intelligent Investor - Benjamin Graham, chú giải Jason Zweig, lời nói đầu Warren E. Buffett)",
+  "license_or_permission": "Sách có bản quyền thương mại; chỉ dùng phục vụ học tập/thực hành local. Không tái phân phối file PDF gốc lên repository công khai.",
+  "accessed_at": "2026-11-13",
+  "physical_pages": 33,
+  "content_pages": 32,
+  "excluded_pages": [
+    {
+      "pdf_page": 31,
+      "book_page": 5,
+      "reason": "Chỉ có 1 dòng chú thích tái bản (67 ký tự), không đủ nội dung."
+    }
+  ],
+  "page_counting_rule": "Mỗi trang PDF vật lý có ít nhất 100 ký tự nội dung tiếng Việt đã chuẩn hóa Unicode NFC được tính là 1 trang nội dung. Lưu ý: thứ tự trang trong PDF bị đảo ngược so với số trang sách (pdf_page 33..1 tương ứng book_page 3..35).",
+  "sections": [
+    {
+      "section_id": "preface_buffett",
+      "author_role": "buffett",
+      "title": "Lời nói đầu & Tưởng niệm Benjamin Graham (Warren E. Buffett)",
+      "book_pages": [3, 4],
+      "pdf_pages": [33, 32]
+    },
+    {
+      "section_id": "commentary_graham_intro",
+      "author_role": "zweig",
+      "title": "Chú giải về Benjamin Graham (Jason Zweig)",
+      "book_pages": [6, 7, 8],
+      "pdf_pages": [30, 29, 28]
+    },
+    {
+      "section_id": "introduction",
+      "author_role": "graham",
+      "title": "Phần mở đầu: Những gì cuốn sách này hy vọng sẽ đạt được (Benjamin Graham)",
+      "book_pages": [9, 10, 11, 12, 13, 14, 15],
+      "pdf_pages": [27, 26, 25, 24, 23, 22, 21]
+    },
+    {
+      "section_id": "commentary_intro",
+      "author_role": "zweig",
+      "title": "Bình luận về Phần mở đầu (Jason Zweig)",
+      "book_pages": [16, 17, 18, 19],
+      "pdf_pages": [20, 19, 18, 17]
+    },
+    {
+      "section_id": "chapter_1",
+      "author_role": "graham",
+      "title": "Chương 1: Đầu tư hay đầu cơ: các kết quả mà nhà đầu tư thông minh trông đợi (Benjamin Graham)",
+      "book_pages": [20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30],
+      "pdf_pages": [16, 15, 14, 13, 12, 11, 10, 9, 8, 7, 6]
+    },
+    {
+      "section_id": "commentary_ch1",
+      "author_role": "zweig",
+      "title": "Bình luận về Chương 1 (Jason Zweig)",
+      "book_pages": [31, 32, 33, 34, 35],
+      "pdf_pages": [5, 4, 3, 2, 1]
+    }
+  ]
+}
+

@@ -1,0 +1,134 @@
+{
+  "model": "gemini-embedding-001",
+  "provider": "gemini",
+  "dimensions": 3072,
+  "total_tokens": 0,
+  "content_pages": 32,
+  "skipped_pages": [
+    {
+      "pdf_page": 31,
+      "char_count": 65,
+      "reason": "excluded_in_manifest",
+      "preview": "5\n\nIn lại từ Financial Analysts Journal, tháng 11 và 12 năm 1976."
+    }
+  ],
+  "strategies": {
+    "A": {
+      "chunk_count": 218,
+      "count_after_reingest": 218,
+      "idempotent_ok": true,
+      "total_chars": 102284,
+      "min_len": 68,
+      "median_len": 500.0,
+      "max_len": 500,
+      "ingest_seconds": 0.871,
+      "summary": {
+        "dev": {
+          "total": 15,
+          "hit_at_1_count": 10,
+          "hit_at_1": 0.6667,
+          "hit_at_3_count": 14,
+          "hit_at_3": 0.9333,
+          "filter_queries": 0,
+          "filter_compliant_count": 0
+        },
+        "test": {
+          "total": 5,
+          "hit_at_1_count": 3,
+          "hit_at_1": 0.6,
+          "hit_at_3_count": 4,
+          "hit_at_3": 0.8,
+          "filter_queries": 0,
+          "filter_compliant_count": 0
+        },
+        "all": {
+          "total": 20,
+          "hit_at_1_count": 13,
+          "hit_at_1": 0.65,
+          "hit_at_3_count": 18,
+          "hit_at_3": 0.9,
+          "filter_queries": 0,
+          "filter_compliant_count": 0
+        }
+      }
+    },
+    "B": {
+      "chunk_count": 171,
+      "count_after_reingest": 171,
+      "idempotent_ok": true,
+      "total_chars": 92870,
+      "min_len": 113,
+      "median_len": 585,
+      "max_len": 797,
+      "ingest_seconds": 0.624,
+      "summary": {
+        "dev": {
+          "total": 15,
+          "hit_at_1_count": 11,
+          "hit_at_1": 0.7333,
+          "hit_at_3_count": 14,
+          "hit_at_3": 0.9333,
+          "filter_queries": 0,
+          "filter_compliant_count": 0
+        },
+        "test": {
+          "total": 5,
+          "hit_at_1_count": 3,
+          "hit_at_1": 0.6,
+          "hit_at_3_count": 5,
+          "hit_at_3": 1.0,
+          "filter_queries": 0,
+          "filter_compliant_count": 0
+        },
+        "all": {
+          "total": 20,
+          "hit_at_1_count": 14,
+          "hit_at_1": 0.7,
+          "hit_at_3_count": 19,
+          "hit_at_3": 0.95,
+          "filter_queries": 0,
+          "filter_compliant_count": 0
+        }
+      }
+    },
+    "C": {
+      "chunk_count": 171,
+      "count_after_reingest": 171,
+      "idempotent_ok": true,
+      "total_chars": 92870,
+      "min_len": 113,
+      "median_len": 585,
+      "max_len": 797,
+      "ingest_seconds": 0.605,
+      "summary": {
+        "dev": {
+          "total": 15,
+          "hit_at_1_count": 11,
+          "hit_at_1": 0.7333,
+          "hit_at_3_count": 14,
+          "hit_at_3": 0.9333,
+          "filter_queries": 3,
+          "filter_compliant_count": 3
+        },
+        "test": {
+          "total": 5,
+          "hit_at_1_count": 3,
+          "hit_at_1": 0.6,
+          "hit_at_3_count": 5,
+          "hit_at_3": 1.0,
+          "filter_queries": 1,
+          "filter_compliant_count": 1
+        },
+        "all": {
+          "total": 20,
+          "hit_at_1_count": 14,
+          "hit_at_1": 0.7,
+          "hit_at_3_count": 19,
+          "hit_at_3": 0.95,
+          "filter_queries": 4,
+          "filter_compliant_count": 4
+        }
+      }
+    }
+  }
+}

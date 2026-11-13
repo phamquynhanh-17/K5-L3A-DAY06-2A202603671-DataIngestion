@@ -1,4 +1,4 @@
 strategy,chunking,chunk_size,overlap,metadata,filter,vectorizer,hypothesis,dev_hit1,dev_hit3,test_hit1,test_hit3,notes
-A,,,,,,,,,,,,
-B,,,,,,,,,,,,
-C,,,,,,,,,,,,
+A,fixed_size,500,50,"document_id,source,page,book_page,section,author_role",none,gemini-embedding-001,"Chunk co dinh 500 ky tu de bi cat ngang cau/y, lam giam coherence va do chinh xac.",10/15 (66.67%),14/15 (93.33%),3/5 (60.00%),4/5 (80.00%),"chunks=218, ingest_s=0.871"
+B,by_paragraph,800,0,"document_id,source,page,book_page,section,author_role",none,gemini-embedding-001,Gom theo doan logic giup giu tron y (coherence cao hon A) va cai thien retrieval.,11/15 (73.33%),14/15 (93.33%),3/5 (60.00%),5/5 (100.00%),"chunks=171, ingest_s=0.624"
+C,by_paragraph,800,0,"document_id,source,page,book_page,section,author_role",section/author_role when specified,gemini-embedding-001,Ket hop chunk theo doan voi metadata filter giup thu hep pham vi va giam nhieu giua Graham/Zweig.,11/15 (73.33%),14/15 (93.33%),3/5 (60.00%),5/5 (100.00%),"chunks=171, ingest_s=0.605"

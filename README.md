@@ -45,3 +45,21 @@ Dùng cùng dữ liệu, model và câu hỏi cho cả ba cấu hình. Tách **1
 | Cách nộp bài | [SUBMISSION.md](SUBMISSION.md) |
 
 [data/format-example.json](data/format-example.json) chỉ minh họa định dạng, không phải corpus đủ điều kiện. Phần xử lý và benchmark do bạn tự hiện thực; không bắt buộc xây chatbot.
+
+## Hướng dẫn setup & chạy bài làm (Chroma local + Gemini API)
+
+- **Dữ liệu nguồn**: Đặt file `sách.pdf` tại `starter/data/sách.pdf` (không commit lên Git vì bản quyền; xem chi tiết cấu trúc trang và nguồn tại [data/manifest.json](data/manifest.json)).
+- **Benchmark**: [benchmark/questions.json](benchmark/questions.json) (20 câu: 15 dev / 5 test, 4 câu metadata filter).
+- **Cài đặt môi trường** (khuyến nghị tạo venv ở đường dẫn ngắn trên Windows để tránh lỗi `MAX_PATH` 260 ký tự):
+  ```powershell
+  python -m venv C:\Users\Admin\.venvs\day06
+  C:\Users\Admin\.venvs\day06\Scripts\pip.exe install pypdf python-dotenv chromadb openai requests
+  ```
+- **Cấu hình & chạy pipeline**:
+  1. Copy `starter/.env.example` thành `starter/.env` và điền `GEMINI_API_KEY`.
+  2. Chạy từ thư mục `starter/`:
+     ```powershell
+     cd starter
+     C:\Users\Admin\.venvs\day06\Scripts\python.exe -m src.run
+     ```
+- **Kết quả & Báo cáo**: Lưu tại `starter/results/` (`summary.json`, `traces_{A,B,C}.json`, `manual_audit_completed.md`), [artifacts/experiment_log.csv](artifacts/experiment_log.csv), và [report/individual/2A202603671_PhamQuynhAnh.md](report/individual/2A202603671_PhamQuynhAnh.md).
